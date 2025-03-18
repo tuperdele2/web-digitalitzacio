@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La meva web</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Benvingut a la meva pàgina web!</h1>
-    <p>Aquesta és una web feta amb GitHub Pages.</p>
+    <header>
+        <h1>Benvingut a la meva pàgina web!</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre mi</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contacte">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre mi</h2>
+        <p>Hola! Aquesta és la meva pàgina web feta amb GitHub Pages.</p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <img src="images/exemple.jpg" alt="Imatge d'exemple">
+    </section>
+
+    <section id="contacte">
+        <h2>Contacte</h2>
+        <form>
+            <input type="text" id="nom" placeholder="El teu nom">
+            <button type="button" onclick="saludar()">Enviar</button>
+        </form>
+        <p id="missatge"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 La meva web</p>
+    </footer>
 </body>
 </html>
