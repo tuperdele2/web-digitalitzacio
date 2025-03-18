@@ -3,43 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La meva web</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>Intel·ligència Artificial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Benvingut a la pàgina web!</h1>
+        <h1>Intel·ligència Artificial</h1>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre mi</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contacte">Contacte</a></li>
+                <li><a href="#que-es">Què és la IA?</a></li>
+                <li><a href="#historia">Història</a></li>
+                <li><a href="#xatbot">Xatbot o humà?</a></li>
+                <li><a href="#comptador">Compte enrere</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="sobre">
-        <h2>Sobre mi</h2>
-        <p>Hola! Aquesta és la meva pàgina web feta amb GitHub Pages.</p>
+    
+    <section id="que-es">
+        <h2>Què és la intel·ligència artificial?</h2>
+        <p>L'IA és la simulació de processos d'intel·ligència humana per part de màquines...</p>
     </section>
 
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <img src="images/exemple.jpg" alt="Imatge d'exemple">
+    <section id="historia">
+        <h2>Una mica d’història</h2>
+        <p>Des dels primers algoritmes fins als xatbots moderns...</p>
     </section>
 
-    <section id="contacte">
-        <h2>Contacte</h2>
-        <form>
-            <input type="text" id="nom" placeholder="El teu nom">
-            <button type="button" onclick="saludar()">Enviar</button>
-        </form>
-        <p id="missatge"></p>
+    <section id="xatbot">
+        <h2>Xatbot o humà?</h2>
+        <p>Endevina si aquest text ha estat escrit per una IA o per un humà!</p>
+        <button onclick="jugar()">Comença el joc</button>
+        <p id="resultat"></p>
+    </section>
+
+    <section id="comptador">
+        <h2>Compte enrere fins a l'1 de juny</h2>
+        <div id="countdown"></div>
     </section>
 
     <footer>
-        <p>© 2025 La meva web</p>
+        <p>© 2025 Concurs de Digitalització</p>
     </footer>
 </body>
 </html>
