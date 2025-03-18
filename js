@@ -1,3 +1,13 @@
+function jugar() {
+    const textos = [
+        "Aquest text ha estat generat per una IA.",
+        "Aquest text ha estat escrit per un humà."
+    ];
+    
+    const aleatori = Math.floor(Math.random() * textos.length);
+    document.getElementById("resultat").innerText = textos[aleatori];
+}
+
 // Funció per al compte enrere
 function actualitzarCompteEnrere() {
     const dataFinal = new Date("June 1, 2025 00:00:00").getTime();
@@ -19,3 +29,4 @@ function actualitzarCompteEnrere() {
 
 // Actualitzar el compte enrere cada segon
 setInterval(actualitzarCompteEnrere, 1000);
+
