@@ -6,5 +6,7 @@ function jugar() {
     
     const aleatori = Math.floor(Math.random() * textos.length);
     document.getElementById("resultat").innerText = textos[aleatori];
+    
+    // Redirigir a una pàgina web
+    window.location.href = "https://www.humanornot.ai/"; // Canvia aquesta URL per la que vulguis
 }
-
